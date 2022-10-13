@@ -5,6 +5,9 @@ pipeline{
                 steps{
                     sh "mkdir ~/jenkins-tutorial-test1"
                 }
+                  dir('$JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_NUMBER/archive') {
+    // some block
+}  
             }
             stage('Make Files'){
                 steps{
