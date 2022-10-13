@@ -2,7 +2,7 @@ pipeline{
         agent any
         stages{
                 
-                   checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Rajwant1983/qa-cicd.git']]])
+                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Rajwant1983/qa-cicd.git']]])  
         }
             stage('Make Files'){
                 steps{
