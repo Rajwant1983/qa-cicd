@@ -1,0 +1,10 @@
+Pipeline:{
+agent:any,
+Stages:{
+Stage:{
+step:{
+Sh "python3 -m pytest --cov
+}
+}
+}
+}
