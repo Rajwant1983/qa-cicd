@@ -1,6 +1,6 @@
 Pipeline:{
-agent:any,
-Stages:{
+agent any
+        stages{
 Stage:{
 Step:{
    Sh "python3 -m pytest --cov
